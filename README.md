@@ -1,4 +1,4 @@
-![Project Badge](https://img.shields.io/github/issues-raw/Stinktopf/IntServ10?color=blue) ![size](https://img.shields.io/github/repo-size/Stinktopf/IntServ10?color=green&label=size) ![Snyk infrastructure analysis](https://github.com/Stinktopf/IntServ10/actions/workflows/snyk-infrastructure-analysis.yml/badge.svg)
+![open issues](https://img.shields.io/github/issues-raw/Stinktopf/IntServ10?color=red) ![closed issues](https://img.shields.io/github/issues-closed-raw/Stinktopf/IntServ10?color=lime) ![size](https://img.shields.io/github/repo-size/Stinktopf/IntServ10?color=green&label=size) ![Snyk infrastructure analysis](https://github.com/Stinktopf/IntServ10/actions/workflows/snyk-infrastructure-analysis.yml/badge.svg)
 
 
 
