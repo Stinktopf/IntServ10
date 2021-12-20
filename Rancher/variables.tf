@@ -13,7 +13,6 @@ variable "rancher_version" {
 variable "rancher_admin_password" {
   type = string
   description = "Password for admin login"
-  default = "password"
 }
 
 variable "prefix" {
