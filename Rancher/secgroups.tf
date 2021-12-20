@@ -1,7 +1,7 @@
 # Creating Openstack security groups
 resource "openstack_networking_secgroup_v2" "demo_secgroup" {
-  name        = "${var.prefix}-demo"
-  description = "demo security group"
+  name        = "${var.prefix}-rancher"
+  description = "Rancher security group"
 }
 
 # Creating Openstack security group rule for https 443
