@@ -1,7 +1,7 @@
 # ATTENTION: Please have a look into secgroups.tf and make sure, that the open ports do not endanger your network security!
 
 # Please fill in these variables of your OpenStack
-openstack_project = "<project-name>"
+openstack_project  = "<project-name>"
 openstack_username = "<username>"
 openstack_password = "<password>"
 openstack_auth_url = "<auth-url>"
