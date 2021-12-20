@@ -6,7 +6,7 @@ resource "openstack_networking_network_v2" "demo_network" {
 
 # Creating openstack subnet with CIDR
 resource "openstack_networking_subnet_v2" "demo_subnet" {
-  name       = "${var.prefix}-demo"
+  name       = "${var.prefix}-rancher"
   network_id = openstack_networking_network_v2.demo_network.id
   cidr       = var.subnet_cidr
   ip_version = 4
