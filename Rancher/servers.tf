@@ -19,10 +19,6 @@ resource "openstack_compute_instance_v2" "rancher_server" {
   key_pair        = openstack_compute_keypair_v2.demo_keypair.name
   security_groups = [openstack_networking_secgroup_v2.demo_secgroup.name]
   user_data       = data.template_file.cloud-config-rancher.rendered
-  metadata            = {
-    clustername="${var.cluster_name}"
-    type="provisioner"
-    }
 
   network {
     name = openstack_networking_network_v2.demo_network.name

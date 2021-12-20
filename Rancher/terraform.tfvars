@@ -1,6 +1,6 @@
 # ATTENTION: Please have a look into secgroups.tf and make sure, that the open ports do not endanger your network security!
 
-# please fill these variables or use TF_VARS_ prefix to be exported env variables
+# Please fill in these variables of your OpenStack
 openstack_project = "<project-name>"
 openstack_username = "<username>"
 openstack_password = "<password>"
@@ -8,26 +8,26 @@ openstack_auth_url = "<auth-url>"
 openstack_domain   = "<domain>"
 public_key         = "<content-of-ssh-public-key>"
 
-# DNS server
+# Rancher password for admin
+rancher_admin_password = "<password>"
+
+# DNS server (defaults to 8.8.8.8)
 dns_server = ["<dns-server-adress>"]
 
 # Name of floating IP pool
 ip_pool_name = "<floating-ip-pool>"
 
-# ID of External Network
+# ID of external network
 external_network = "<external-net>"
 
 # Resources will be prefixed with this to avoid clashing names
 prefix = "<instance-prefix>"
 
-# Nodes server Image ID
+# OpenStack Ubuntu image ID
 rancher_node_image_id = "<image-id-for-the-instance>"
 
-# Server flavor
+# OpenStack instance flavor
 rancher_server_flavor = "<flavor-name>"
 
-# Name of custom cluster that will be created
-cluster_name = "<cluster-name>"
-
-# rancher/rancher image tag to use
+# Rancher version
 rancher_version = "v2.6.2"

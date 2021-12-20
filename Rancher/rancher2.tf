@@ -29,23 +29,3 @@ resource "null_resource" "wait_for_rancher" {
   depends_on = [openstack_compute_floatingip_associate_v2.rancher_server_ip_attach,openstack_networking_secgroup_rule_v2.https]
 
 }
-
-# Creating Rancher2 demo cluster with rke configs
-resource "rancher2_cluster" "demo" {
-  provider                  = rancher2.admin
-  name                      = var.cluster_name
-  description               = "${var.prefix} rancher2 rke cluster"
-  enable_cluster_monitoring = true
-  rke_config {
-    network {
-      plugin = "canal"
-    }
-    services {
-      kubelet {
-        extra_args = {
-          cloud-provider = "external"
-        }
-      }
-    }
-  }
-}
