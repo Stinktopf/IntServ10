@@ -1,6 +1,6 @@
 # Creating openstack network
 resource "openstack_networking_network_v2" "demo_network" {
-  name           = "${var.prefix}-demo"
+  name           = "${var.prefix}-rancher"
   admin_state_up = "true"
 }
 
@@ -16,7 +16,7 @@ resource "openstack_networking_subnet_v2" "demo_subnet" {
 
 # Creating openstack router
 resource "openstack_networking_router_v2" "demo_router" {
-  name                = "${var.prefix}-demo"
+  name                = "${var.prefix}-rancher"
   external_network_id = data.openstack_networking_network_v2.external_network.id
 }
 
