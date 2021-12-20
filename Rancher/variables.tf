@@ -1,6 +1,6 @@
 variable "dns_server" {
   type = list(string)
-  description = "DNS server which is resolving requests for your rancher server."
+  description = "DNS server which is resolving requests for your rancher server"
   default = ["8.8.8.8"]
 }
 
@@ -33,23 +33,23 @@ variable "rancher_node_image_id" {
 
 variable "external_network" {
   type = string
-  description = "Name of the external network, your OpenStack is connected to."
+  description = "Name of the external network, your OpenStack is connected to"
   default = "Public_Network"
 }
 
 variable "subnet_cidr" {
   type = string
-  description = "OpenStack subnet CIDR where instances IPs will be assigned."
+  description = "OpenStack subnet CIDR where instances IPs will be assigned"
   default = "192.168.201.0/24"
 }
 
 variable "ip_pool_name" {
   type = string
-  description = "Floating IP pool of your OpenStack."
+  description = "Floating IP pool of your OpenStack"
   default = "Public_Network"
 }
 
 variable "public_key" {
   type = string
-  description = "SSH Public key content to be injected instances."
+  description = "SSH Public key content to be injected instances"
 }
