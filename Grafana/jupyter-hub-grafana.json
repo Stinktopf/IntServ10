@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 45,
+  "id": 42,
   "links": [],
   "panels": [
     {
@@ -129,7 +129,7 @@
           "label": null,
           "logBase": 1,
           "max": null,
-          "min": null,
+          "min": "0",
           "show": true
         },
         {
@@ -590,7 +590,7 @@
           "label": null,
           "logBase": 1,
           "max": null,
-          "min": null,
+          "min": "0",
           "show": true
         },
         {
@@ -624,5 +624,5 @@
   "timezone": "",
   "title": "JupyterHub",
   "uid": "rzHRZQTnz",
-  "version": 9
+  "version": 2
 }
